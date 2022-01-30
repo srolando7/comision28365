@@ -19,8 +19,10 @@ selector header {
 /*Body*/
 
 body {
-    color: rgb(243, 241, 241);
-    background-color: black;
+    
+    background-image: radial-gradient(
+        red ,black) ;
+
 }
 
 
@@ -145,10 +147,8 @@ h3 {
 
 .padre {
     display: grid;
-    display: flex;
     flex-direction: column;
     grid-template-columns: auto;
-    background-color: black;
     padding: 10 px;
     width: 100%;
     max-width: 100%;
@@ -162,12 +162,20 @@ h3 {
 
 .imagen1 {
     position: relative;
+    display: flex;
     top: 50px;
     left: 40 px;
     text-align: center;
-
     grid-area: imagen1;
+    height: 100px;
+    transition: height 2s;
+    
 }
+
+.imagen1:hover{
+    height: 200px;
+}
+
 
 .parrafo1 {
     position: relatabive;
@@ -178,11 +186,17 @@ h3 {
 
 .imagen2 {
     position: relative;
+    display: flex;
     top: 50px;
     left: 40 px;
     text-align: center;
-
     grid-area: imagen2;
+    height: 100px;
+    transition: height 2s;
+}
+
+.imagen2:hover{
+    height: 200px;
 }
 
 .parrafo2 {
@@ -227,8 +241,10 @@ footer{
 
 
 
-/*Termino padre e hijo*/
 
+
+
+/*Termino padre e hijo*/
 
 
 .padre-flex {
