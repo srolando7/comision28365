@@ -8,7 +8,6 @@ selector header {
 .logo {
 
     position: absolute;
-    display: flex;
     top: 25px;
     left: 20px;
     text-align: left;
@@ -20,9 +19,7 @@ selector header {
 
 body {
     
-    background-image: radial-gradient(
-        red ,black) ;
-
+    background-image:linear-gradient(to top , black,black);
 }
 
 
@@ -40,52 +37,7 @@ body {
 }
 
 
-/* CARRUSEL IMAGENES-SECCION NOSOTROS*/
-.carrusel {
-    width: auto;
-    margin: auto;
-    overflow: hidden;
-}
 
-.carruselnosotros li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 50%;
-}
-
-.carrusel ul {
-    display: flex;
-    padding: 0;
-    width: 200%;
-    animation: cambio 10s infinite alternate;
-    animation-timing-function: ease-in;
-}
-
-.carruselnosotros img {
-    width: 100%;
-}
-
-@keyframes cambio {
-    0% {
-        margin-left: 0;
-    }
-
-    50% {
-        margin-left: 0;
-    }
-
-    55% {
-        margin-left: -100%;
-    }
-
-    100% {
-        margin-left: -100%;
-    }
-}
-
-/* CARRUSEL IMAGENES - SECCION NOSOTROS*/
 
 
 /*Lista Secciones*/
@@ -102,7 +54,38 @@ body {
 }
 
 
+label{
+    color: white;
+}
 
+
+
+/*container*/
+
+  
+
+  #carouselExampleIndicators{
+
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+
+  .container{
+      margin-top: 100px;
+  }
+
+    
+
+
+
+
+/*container*/
 
 ul li:hover{
     transform: scale(1,1.5);
@@ -140,6 +123,10 @@ a:hover{
 
 h3 {
     color: rgb(243, 241, 241);
+    text-align: left;
+    position: absolute;
+    margin-left: 50px;
+    
 }
 
 
@@ -178,7 +165,7 @@ h3 {
 
 
 .parrafo1 {
-    position: relatabive;
+    position: relative;
     top: 40px;
     ;
     grid-area: parrafo1;
@@ -211,6 +198,7 @@ h3 {
 p {
     text-align: center;
     margin-top: 10px;
+    color: white;
 }
 
 .imagen3 {
@@ -230,18 +218,6 @@ p {
     display: block;
 
 }
-
-footer{
-    position: relative;
-    display: flex;
-    padding-left: 600px;
-    padding-top: 60px;
-}
-
-
-
-
-
 
 
 /*Termino padre e hijo*/
@@ -275,19 +251,6 @@ h2 {
     text-align: center;
     margin-top: 20px;
 
-
-
-
-}
-
-
-
-
-
-form {
-    text-align: right;
-    margin-right: 120px;
-    margin-top: 0px;
 }
 
 
@@ -296,19 +259,23 @@ form {
 
 
 
-h4 {
+h4{
 
-    color: rgb(243, 241, 241);
+    color: white;
+    position: absolute;
+}
 
-
+footer{
+    margin-top: 200px;
+    text-align: end;
 }
 
 
-footer {
-    color: rgb(243, 241, 241);
-    text-align: center;
-    margin-top: 40px;
-}
+
+
+
+
+
 
 #destacado {
     font-weight: bold;
@@ -316,10 +283,9 @@ footer {
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
 
-
 }
+
